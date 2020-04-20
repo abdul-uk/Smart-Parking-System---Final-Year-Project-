@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="SmartParking.Service.DetectionModule">
+    <Position X="4.25" Y="11.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="SmartParking.Service.DetectionModule.DisplayImageDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DetectionModule.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>EACIAAJAAiAEIIAAFIQQIgAEEAAAAAQIAAAEgKAQAIA=</HashCode>
+      <FileName>DetectionModule.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="LocsRepo" />
+      <Field Name="yoloWrapper" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="capturesDict" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartParking.Service.Program">
+    <Position X="7.5" Y="16.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAACAAAAAAAAAAgAAIAFAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="detectionModule" />
+      <Field Name="appUI" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SmartParking.Dtos.CameraDevice">
+    <Position X="13" Y="14.75" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="SmartParking.WinFormUI.BaseRepository&lt;Tk, Tv&gt;">
+    <Position X="1" Y="12.25" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="SmartParking.Dtos.CapturingDevice">
+    <Position X="3.75" Y="8.5" Width="2" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Camera" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Rois" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Alturos.Yolo.YoloWrapper">
+    <Position X="0.75" Y="16.25" Width="2.25" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SmartParking.Dtos.ROI">
+    <Position X="0.5" Y="8.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="SmartParking.Dtos.ROI.ROITypes" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Emgu.CV.VideoCapture">
+    <Position X="6.75" Y="8.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Emgu.CV.VideoCapture.API" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+      <Enum Name="Emgu.CV.VideoCapture.CaptureModuleType" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SmartParking.WinFormUI.Form1">
+    <Position X="10.25" Y="13.25" Width="2" />
+    <AssociationLine Name="overviewTab" Type="SmartParking.WinFormUI.OverviewTab" FixedFromPoint="true">
+      <Path>
+        <Point X="11.167" Y="13.25" />
+        <Point X="11.167" Y="12.511" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="addLocFrm" Type="SmartParking.WinFormUI.FrmAddLocation" FixedToPoint="true">
+      <Path>
+        <Point X="11.688" Y="17.117" />
+        <Point X="11.688" Y="17.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Field Name="cams" />
+      <Field Name="overviewTab" />
+      <Field Name="addLocFrm" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SmartParking.WinFormUI.OverviewTab">
+    <Position X="10.25" Y="10.25" Width="2" />
+    <AssociationLine Name="locations" Type="SmartParking.Dtos.Location" FixedToPoint="true">
+      <Path>
+        <Point X="12.25" Y="12.125" />
+        <Point X="13" Y="12.125" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Field Name="locations" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SmartParking.WinFormUI.FrmAddLocation">
+    <Position X="10.75" Y="17.75" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="SmartParking.Dtos.Location">
+    <Position X="13" Y="10.5" Width="2" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Cameras" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
