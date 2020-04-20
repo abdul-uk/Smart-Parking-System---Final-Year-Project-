@@ -1,4 +1,4 @@
-# Smart-Parking-System---Final-Year-Project---Copy
+# Smart-Parking-System---Final-Year-Project
 Vision-based Parking System
 
 # Note
